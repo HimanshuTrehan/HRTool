@@ -6,6 +6,11 @@
     android:orientation="vertical"
 
     android:layout_height="match_parent">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,11 +30,104 @@
 
         <Spinner
             android:id="@+id/spinner1"
+            android:theme="@style/mySpinnerItemStyle"
+            android:popupBackground="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown"
+            android:background="@drawable/spinner_bg"
             android:spinnerMode="dropdown"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:textColor="@color/black"/>
+
+
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:theme="@style/mySpinnerItemStyle"
+            android:popupBackground="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave From:"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="1"
+            android:hint="20/02/2021"
+            android:textColorHint="@color/black"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave To:"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="1"
+            android:hint="20/02/2021"
+            android:textColorHint="@color/black"            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time from:"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="1"
+            android:hint="11:00 AM"
+            android:textColorHint="@color/black"            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time To:"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="1"
+            android:hint="4:00 PM"
+            android:textColorHint="@color/black"            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -45,7 +143,8 @@
             android:hint="title"
         android:gravity="top|left"
         android:maxLines="10"
-        android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:scrollbars="vertical"
         />
@@ -62,6 +161,7 @@
             android:inputType="textMultiLine"
             android:lines="2"
             android:minLines="3"
+            android:textColor="@color/black"
             android:hint="Description"
             android:gravity="top|left"
             android:maxLines="10"
@@ -79,7 +179,6 @@
 
         <EditText
             android:id="@+id/password"
-            android:hint="Email"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
             android:layout_width="match_parent"
@@ -92,20 +191,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textfields"
+            android:layout_marginBottom="30dp"
             android:gravity="center">
 
             <TextView
                 android:id="@+id/login"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_black_button"
-                android:padding="10dp"
                 android:text="Apply"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </RelativeLayout>
     </LinearLayout>
 
+    </ScrollView>
 
 
 
