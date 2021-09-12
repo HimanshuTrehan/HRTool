@@ -1,4 +1,4 @@
-package com.example.hrmanager;
+package com.example.hrmanager.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hrmanager.R;
 
 public class SplashScreen extends AppCompatActivity {
 

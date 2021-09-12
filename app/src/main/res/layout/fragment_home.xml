@@ -14,76 +14,47 @@
         android:layout_marginBottom="20dp">
 
         <RelativeLayout
+            android:id="@+id/details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/details">
+            android:layout_marginBottom="10dp">
+
             <RelativeLayout
+                android:id="@+id/name_details"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/name_details">
-                <TextView
-                    android:id="@+id/name_lbl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Name:"
-                    android:padding="10dp"
-                    android:textSize="22sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"/>
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/black"
+                    android:src="@drawable/person_ic" />
 
                 <TextView
                     android:id="@+id/name"
-                    android:padding="10dp"
-                    android:layout_toRightOf="@id/name_lbl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/profile_pic"
+                    android:padding="10dp"
                     android:text="Jane Doe"
-                    android:textSize="20sp"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="20sp" />
 
             </RelativeLayout>
 
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/name_details"
-    android:id="@+id/email_details">
-
-    <TextView
-        android:id="@+id/email_lbl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email:"
-        android:padding="10dp"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/email"
-        android:padding="10dp"
-        android:layout_toRightOf="@id/email_lbl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jane Doe"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        />
-
-
-</RelativeLayout>
 
         </RelativeLayout>
 
 
-
         <androidx.cardview.widget.CardView
-            android:layout_below="@id/details"
+            android:id="@+id/card_lyt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="30dp"
+            android:layout_below="@id/details"
             android:elevation="10dp"
+            android:paddingBottom="30dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="10dp">
 
@@ -95,8 +66,7 @@
                     android:id="@+id/all_details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    >
+                    android:gravity="center">
 
 
                     <RelativeLayout
@@ -203,28 +173,67 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/leave_lyt"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_below="@id/all_details"
                     android:gravity="center"
-                    android:paddingBottom="10dp"
-                    android:layout_below="@id/all_details">
+                    android:paddingBottom="10dp">
 
                     <TextView
                         android:id="@+id/leave"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/round_black_button"
-
                         android:padding="10dp"
-                        android:text="Apply For levave" />
+                        android:text="Apply For levave"
+                        android:textColor="@color/white" />
 
 
                 </RelativeLayout>
+
+                <!--                <RelativeLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:layout_below="@id/leave_lyt"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:paddingBottom="10dp">-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/leave_status"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:background="@drawable/purple_round_button"-->
+                <!--                        android:paddingHorizontal="20dp"-->
+                <!--                        android:paddingVertical="10dp"-->
+                <!--                        android:text="Leave Status"-->
+                <!--                        android:textColor="@color/white" />-->
+
+
+                <!--                </RelativeLayout>-->
 
             </RelativeLayout>
 
 
         </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_lyt"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teammates on Leave"
+
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
     </RelativeLayout>
 
 

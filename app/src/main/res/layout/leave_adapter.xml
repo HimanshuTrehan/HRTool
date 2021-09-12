@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main">
+        <RelativeLayout
+            android:id="@+id/status_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/light_green"
+                android:text="Approved"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/status_lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_lyt">
+
+            <TextView
+                android:id="@+id/title_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title: "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/title"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/title_lbl"
+                android:text="Going out of station" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/title_lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_type_lyt">
+            <TextView
+                android:id="@+id/leave_type_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Leave Type: "/>
+
+            <TextView
+
+                android:id="@+id/leave_type"
+                android:layout_toRightOf="@id/leave_type_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earned Leaves"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/title_lyt"
+            android:layout_toRightOf="@id/leave_type_lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/type_lyt">
+
+            <TextView
+                android:id="@+id/type_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text=" Type: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_toRightOf="@id/type_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Day"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/leave_type_lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_from_lyt">
+
+            <TextView
+                android:id="@+id/date_from_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_from"
+                android:layout_toRightOf="@id/date_from_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/Sep/2021"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/type_lyt"
+            android:layout_toRightOf="@id/leave_type_lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_to_lyt">
+
+            <TextView
+                android:id="@+id/date_to_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text=" To: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_to"
+                android:layout_toRightOf="@id/date_to_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/Sep/2021 "/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

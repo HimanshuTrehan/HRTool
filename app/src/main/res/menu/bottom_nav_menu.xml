@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/person"
+        android:title="Profile"
+        android:icon="@drawable/person_ic"/>
+    <item
+        android:id="@+id/home"
+        android:title="My Leaves"
+        android:icon="@drawable/ic_leave"/>
+
+    <item
+        android:id="@+id/admin"
+        android:title="Admin"
+        android:icon="@drawable/ic_lock"/>
+
+</menu>

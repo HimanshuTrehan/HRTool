@@ -1,5 +1,6 @@
-package com.example.hrmanager;
+package com.example.hrmanager.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.hrmanager.Activity.ApplyLeave;
+import com.example.hrmanager.Activity.MainActivity;
+import com.example.hrmanager.R;
 
 public class HomeFragment extends Fragment {
 
@@ -32,7 +38,9 @@ public class HomeFragment extends Fragment {
         leave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainActivity.viewPager.setCurrentItem(1);
+
+                Intent intent = new Intent(getContext(), ApplyLeave.class);
+                startActivity(intent);
             }
         });
     }
